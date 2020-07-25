@@ -60,6 +60,26 @@
           </ul>
         </li>
         <li>
+          <h5>Mailing List Sync (2019?)</h5>
+          <p>
+            Scripts that sync mailing lists between Google Groups and Mailman. This project is a collection of individual Perl scripts that:
+            <ol>
+              <li>Get a list of all available organization mailing lists from Ume API</li>
+              <li>Get all members of each individual list using Google's API</li>
+              <li>Save found members to individual lists for Mailman</li>
+              <li>Import mailing list changes into Mailman</li>
+              <li>Update sending rights for users with mailing list changes</li>
+            </ol>
+            <br>
+            Previously, this project ran the first three steps all at one time, but this led to times where Ume API was so busy with the related requests that it couldn't handle new incoming requests. Thus, there would be times where Ume API was unavailable during some of the processing taking place with the Mailing List Sync. In 2020, there was the idea to address this unavailability issue by using the task queue program called Celery. So now, when requests for mailing list members are made, they are taken up as tasks to run independently, so Ume API now can fire off tasks and provides a result URL that can be checked for when the task is completed. Once completed, the desired information is returned without causing a slowdown for Ume API, which means that it can continue to handle other incoming requests as expected.
+            <br>
+            <span class="badge badge-secondary">celery</span>
+            <span class="badge badge-secondary">mailman</span>
+            <span class="badge badge-secondary">perl</span>
+            <span class="badge badge-secondary">ume-api</span>
+          </p>
+        </li>
+        <li>
           <h5>Checkout Board (2019)</h5>
           <p>
             A potential digital "whiteboard" replacement to keep track of staff availability when out of office.<br>
