@@ -82,7 +82,7 @@
         <li>
           <h5>Dashboard (2019)</h5>
           <p>
-            A simple web application project that displays data from User Management. The backend is built with Flask, and the frontend is built with React.<br>
+            A simple web application project that displays data from User Management. The backend is built with Flask, and the frontend is built with React.<br />
             <div class="card">
               <div class="card-header">Technology Used</div>
               <div class="card-body">
@@ -124,7 +124,7 @@
               <li>Import mailing list changes into Mailman</li>
               <li>Update sending rights for users with mailing list changes</li>
             </ol>
-            <br>
+            <br />
             Previously, this project ran the first three steps all at one time, but this led to times where Ume API was so busy with the related requests that it couldn't handle new incoming requests. Thus, there would be times where Ume API was unavailable during some of the processing taking place with the Mailing List Sync. In 2020, there was the idea to address this unavailability issue by using the task queue program called Celery. So now, when requests for mailing list members are made, they are taken up as tasks to run independently, so Ume API now can fire off tasks and provides a result URL that can be checked for when the task is completed. Once completed, the desired information is returned without causing a slowdown for Ume API, which means that it can continue to handle other incoming requests as expected.<br /><br />
             <div class="card">
               <div class="card-header">Technology Used</div>
@@ -216,7 +216,7 @@
             <li>
               <h5>User Management (2017) – web application</h5>
               <p>
-                This web application was built as a means to add, edit, and manage staff (and to a limited amount, student) user accounts for a small to medium user base. Certain user account changes in User Management were synced with Active Directory and Google when changes were made.
+                This web application was built as a means to add, edit, and manage staff (and to a limited amount, student) user accounts for a small to medium user base. With this web application, certain user account changes in User Management are able to be synced with Active Directory and Google when changes are made.
                 <div class="card">
                   <div class="card-header">Technology Used</div>
                   <div class="card-body">
@@ -225,6 +225,7 @@
                     <span class="badge badge-secondary">mysql</span>
                     <span class="badge badge-secondary">rabbitmq</span>
                     <span class="badge badge-secondary">jquery</span>
+                    <span class="badge badge-secondary">vue</span>
                   </div>
                 </div>
               </p>
@@ -268,7 +269,7 @@
             <li>
               <h5>Message Receiver Service (2017) – service</h5>
               <p>
-                This service was built to run the Message Receiver for Windows program.<br>
+                This service was built to run the Message Receiver for Windows program.<br />
                 <div class="card">
                   <div class="card-header">Technology Used</div>
                   <div class="card-body">
@@ -282,7 +283,7 @@
         <li>
           <h5><a href="https://github.com/summea/ideal">Ideal</a> (2012)</h5>
           <p>
-            Ideal is a simple MVC-based web framework written in PHP. Ideal began as a way to explore the building of a framework while, at the same time, providing a tool for future use.<br>
+            Ideal is a simple MVC-based web framework written in PHP. Ideal began as a way to explore the building of a framework while, at the same time, providing a tool for future use.<br />
             <div class="card">
               <div class="card-header">Technology Used</div>
               <div class="card-body">
@@ -329,17 +330,19 @@
         </li>
         [4]
       </ul>
-      <h4>Projects</h4>
+      <h4>School Projects</h4>
       <ul>
         <li>
           <h5><a href="https://github.com/summea/kanjoto">kanjoto</a> (2015-2016)</h5>
           <p>
-            Music composition is often more than randomly selecting musical notes—it involves logical patterns, progressions, and emotions. The goal of the KANJOTO project is to teach a machine to generate music based upon given emotions using the Android platform.<br>
+            Music composition is often more than randomly selecting musical notes—it involves logical patterns, progressions, and emotions. The goal of the KANJOTO project is to teach a machine to generate music based upon selected emotion options using the Android platform. For example, if I wanted to hear music that sounds "happy", I would choose the "happy" emotion and the program would play generated music that is based on past "happy" labeled musical patterns.<br /><br />
+            This was a senior project that was worked on especially throughout the school year, and I had the opportunity to talk about the program over time and demonstrate the program in class. Near the end of the school year, there was also some sort of event where students had the opportunity to have a "booth" where senior projects could be demonstrated to students and visitors (including representatives from companies).<br /><br />
             <div class="card">
               <div class="card-header">Technology Used</div>
               <div class="card-body">
                 <span class="badge badge-secondary">android</span>
                 <span class="badge badge-secondary">java</span>
+                <span class="badge badge-secondary">sqlite</span>
               </div>
             </div>
           </p>
@@ -347,12 +350,13 @@
         <li>
           <h5><a href="https://github.com/summea/kask-kiosk">Kiosk</a> (2014-2015)</h5>
           <p>
-            Team-based project for junior year at school written primarily in C#. The Kiosk project provides a basic implementation of a job application kiosk where users can fill out and submit sample job applications.<br>
+            Kiosk was a team-based project for junior year at school written primarily in C#. The Kiosk project provides a basic implementation of a job application kiosk where users can fill out and submit sample job applications. If I remember correctly, I think I worked more on the web application side of this project, while other members of the group might have worked on that part as well or on other parts like the database, etc.<br />
             <div class="card">
               <div class="card-header">Technology Used</div>
               <div class="card-body">
                 <span class="badge badge-secondary">asp.net mvc</span>
                 <span class="badge badge-secondary">c#</span>
+                <span class="badge badge-secondary">sql-server</span>
               </div>
             </div>
           </p>
