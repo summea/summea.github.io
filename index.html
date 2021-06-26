@@ -3,64 +3,118 @@
   <head>
     <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>summea</title>
+      <title>Work and Education Experience</title>
       <meta name="description" content="showcase">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
       <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
-    <br><br>
+    <a name="top" />
     <div class="container">
-      <h2>Project History</h2>
+      <h2>Work and Education Experience</h2>
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link" href="#programming-projects">Programming Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#server-administration">Server Administration</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#education">Education</a>
+        </li>
+      </ul>    
+      <a name="programming-projects" />
+      <h3>Programming Projects</h3>
+      <i>Note: The year of when each project was started is shown in the (year) notes on this page (where possible).</i><br /><br />
       <ul>
-        <li>
-          <h5>User Management (2017-present)</h5>
-          <p>A system for managing user accounts between local database, Active Directory, and Google. Expanded upon the work done by previous developers in this position by incorporating active requirements into a new system of interconnected applications, components, and services.</p>
-          <ul>
-            <li>User Management – web application
-              <p>
-                This web application was built as a means to add, edit, and manage staff (and to a limited amount, student) user accounts for a small to medium user base. Certain user account changes in User Management were synced with Active Directory and Google when changes were made.<br>
+      <li>
+          <h5>Check-In Check-Out 2 (2020)</h5>
+          <p>
+            A rebuild of the previous Check-In Check-Out program due to a software issue between Django and SQL Server in relation to UUID database values. The new version was built with Laravel 7 and was later upgraded to Laravel 8. This web application is used to help instructors and staff input data for positive student behavior and critical incidents where events impacting something (e.g., classroom instructional time) happen. Then, this data can be retrieved in the application or through paginated SSRS reports in the Student Information System [1]. Much of the data is stored in the related Student Information System (SIS) backend SQL Server database, while some other program-specific data is stored in a local MySQL database.
+            <div class="card">
+              <div class="card-header">Technology Used</div>
+              <div class="card-body">
                 <span class="badge badge-secondary">laravel</span>
-                <span class="badge badge-secondary">mariadb</span>
+                <span class="badge badge-secondary">ssrs</span>
                 <span class="badge badge-secondary">mysql</span>
-                <span class="badge badge-secondary">rabbitmq</span>
-                <span class="badge badge-secondary">jquery</span>
-              </p>
-            </li>
-            <li>Student Data Sync – component<br>
-              <p style="margin-bottom:0;">
-                The Student Data Sync program is made up of a variety of utilities that deal with:
-                <ul style="margin-bottom:0;">
-                  <li>Blank Email Accounts</li>
-                  <li>Graduated Accounts</li>
-                  <li>New Accounts</li>
-                  <li>Mass Update</li>
-                  <li>Withdrawn Accounts</li>
-                </ul>
-                <span class="badge badge-secondary">python</span>
-                <span class="badge badge-secondary">php</span>
-                <span class="badge badge-secondary">rabbitmq</span>
-              </p>
-            </li>
-            <li>Message Receiver for Windows – component
-              <p>
-                This program was built to listen for input passed along from the User Management web application and Student Data Sync component via RabbitMQ. The RabbitMQ approach was later phased out in favor of a web API approach with the Directory API project.<br> 
-                <span class="badge badge-secondary">c#</span>
-                <span class="badge badge-secondary">rabbitmq</span>
-                <span class="badge badge-secondary">active-directory</span>
-              </p>
-            </li>
-            <li>Message Receiver Service – service
-              <p>
-                This service was built to run the Message Receiver for Windows program.<br>
-                <span class="badge badge-secondary">c#</span>
-              </p>
-            </li>
-          </ul>
+                <span class="badge badge-secondary">sql-server</span>
+                <span class="badge badge-secondary">nginx </span>
+              </div>
+             </div>
+          </p>
         </li>
         <li>
-          <h5>Mailing List Sync (2019?)</h5>
+          <h5>Checkout Board (2019)</h5>
+          <p>
+            A potential digital "whiteboard" replacement to keep track of staff availability when out of office.
+            <div class="card">
+              <div class="card-header">Technology Used</div>
+              <div class="card-body">
+                <span class="badge badge-secondary">django</span>
+                <span class="badge badge-secondary">postgresql</span>
+                <span class="badge badge-secondary">react</span>
+                <span class="badge badge-secondary">typescript</span>
+                <span class="badge badge-secondary">nginx </span>
+                <span class="badge badge-secondary">uwsgi</span>
+              </div>
+             </div>
+          </p>
+        </li>
+        <li>
+          <h5>Check-In Check-Out (2019)</h5>
+          <p>
+            A simple project that allows users to add and manage student behavior data.
+            <div class="card">
+              <div class="card-header">Technology Used</div>
+              <div class="card-body">
+                <span class="badge badge-secondary">django</span>
+                <span class="badge badge-secondary">postgresql</span>
+                <span class="badge badge-secondary">react</span>
+                <span class="badge badge-secondary">ssrs</span>
+                <span class="badge badge-secondary">sql-server</span>
+                <span class="badge badge-secondary">nginx </span>
+                <span class="badge badge-secondary">uwsgi</span>
+              </div>
+            </div>
+          </p>
+        </li>
+        <li>
+          <h5>Dashboard (2019)</h5>
+          <p>
+            A simple web application project that displays data from User Management. Backend built with Flask, frontend built with React.<br>
+            <div class="card">
+              <div class="card-header">Technology Used</div>
+              <div class="card-body">
+                <span class="badge badge-secondary">flask</span>
+                <span class="badge badge-secondary">jwt</span>
+                <span class="badge badge-secondary">nginx</span>
+                <span class="badge badge-secondary">postgresql </span>
+                <span class="badge badge-secondary">reactjs </span>
+                <span class="badge badge-secondary">uwsgi</span>
+              </div>
+            </div>
+          </p>
+        </li>
+        <li>
+          <h5>Upload Portal (2019)</h5>
+          <p>
+            An extremely simple web application for uploading and managing files. I hesitate to include this in the project list because this is more of a trivial application. If it is helpful in the future, there might be room to work on this more, but for now this is a simple web application that was more of an introduction to using Django for something useful.<br /><br />
+            <b>Update (2021):</b> This application has turned out to be useful for times where it's difficult to transfer files from one server to another. In particular, when transferring something from an older Windows Server elsewhere, this application was an easier way to safely transfer files.
+            <br />
+            <div class="card">
+              <div class="card-header">Technology Used</div>
+              <div class="card-body">
+                <span class="badge badge-secondary">django</span>
+                <span class="badge badge-secondary">postgresql</span>
+                <span class="badge badge-secondary">uwsgi</span>
+                <span class="badge badge-secondary">nginx</span>
+              </div>
+            </div>
+          </p>
+        </li>
+        <li>
+          <h5>Mailing List Sync (2018)</h5>
           <p>
             Scripts that sync mailing lists between Google Groups and Mailman. This project is a collection of individual Perl scripts that:
             <ol>
@@ -71,137 +125,245 @@
               <li>Update sending rights for users with mailing list changes</li>
             </ol>
             <br>
-            Previously, this project ran the first three steps all at one time, but this led to times where Ume API was so busy with the related requests that it couldn't handle new incoming requests. Thus, there would be times where Ume API was unavailable during some of the processing taking place with the Mailing List Sync. In 2020, there was the idea to address this unavailability issue by using the task queue program called Celery. So now, when requests for mailing list members are made, they are taken up as tasks to run independently, so Ume API now can fire off tasks and provides a result URL that can be checked for when the task is completed. Once completed, the desired information is returned without causing a slowdown for Ume API, which means that it can continue to handle other incoming requests as expected.
-            <br>
-            <span class="badge badge-secondary">celery</span>
-            <span class="badge badge-secondary">mailman</span>
-            <span class="badge badge-secondary">perl</span>
-            <span class="badge badge-secondary">ume-api</span>
-          </p>
-        </li>
-        <li>
-          <h5>Checkout Board (2019)</h5>
-          <p>
-            A potential digital "whiteboard" replacement to keep track of staff availability when out of office.<br>
-            <span class="badge badge-secondary">django</span>
-            <span class="badge badge-secondary">postgresql</span>
-            <span class="badge badge-secondary">react</span>
-            <span class="badge badge-secondary">typescript</span>
-            <span class="badge badge-secondary">nginx </span>
-            <span class="badge badge-secondary">uwsgi</span>
-          </p>
-        </li>
-        <li>
-          <h5>Check-in Check-out (2019)</h5>
-          <p>
-            A simple project that allows users to add and manage student behavior data.<br>
-            <span class="badge badge-secondary">django</span>
-            <span class="badge badge-secondary">postgresql</span>
-            <span class="badge badge-secondary">react</span>
-            <span class="badge badge-secondary">sql-server</span>
-            <span class="badge badge-secondary">nginx </span>
-            <span class="badge badge-secondary">uwsgi</span>
-          </p>
-        </li>
-        <li>
-          <h5>Dashboard (2019)</h5>
-          <p>
-            A simple web application project that displays data from User Management. Backend built with Flask, frontend built with React.<br>
-            <span class="badge badge-secondary">flask</span>
-            <span class="badge badge-secondary">jwt</span>
-            <span class="badge badge-secondary">nginx</span>
-            <span class="badge badge-secondary">postgresql </span>
-            <span class="badge badge-secondary">reactjs </span>
-            <span class="badge badge-secondary">uwsgi</span>
-          </p>
-        </li>
-        <li>
-          <h5>Upload Portal (2019)</h5>
-          <p>
-            An extremely simple web application for uploading and managing files. I hesitate to include this in the project list because this is more of a trivial application. If it is helpful in the future, there might be room to work on this more, but for now this is a simple web application that was more of an introduction to using Django for something useful.<br>
-            <span class="badge badge-secondary">django</span>
-            <span class="badge badge-secondary">postgresql</span>
-            <span class="badge badge-secondary">uwsgi</span>
-            <span class="badge badge-secondary">nginx</span>
+            Previously, this project ran the first three steps all at one time, but this led to times where Ume API was so busy with the related requests that it couldn't handle new incoming requests. Thus, there would be times where Ume API was unavailable during some of the processing taking place with the Mailing List Sync. In 2020, there was the idea to address this unavailability issue by using the task queue program called Celery. So now, when requests for mailing list members are made, they are taken up as tasks to run independently, so Ume API now can fire off tasks and provides a result URL that can be checked for when the task is completed. Once completed, the desired information is returned without causing a slowdown for Ume API, which means that it can continue to handle other incoming requests as expected.<br /><br />
+            <div class="card">
+              <div class="card-header">Technology Used</div>
+              <div class="card-body">
+                <span class="badge badge-secondary">celery</span>
+                <span class="badge badge-secondary">mailman</span>
+                <span class="badge badge-secondary">perl</span>
+                <span class="badge badge-secondary">ume-api</span>
+              </div>
+            </div>
           </p>
         </li>
         <li>
           <h5>Directory API (2018)</h5>
           <p>
-            A web API used to communicate with Active Directory from various locations.<br>
-            <span class="badge badge-secondary">asp.net-core-2.0</span>
-            <span class="badge badge-secondary">active-directory</span>
-            <span class="badge badge-secondary">c#</span>
-            <span class="badge badge-secondary">iis</span>
+            A web API used to communicate with Active Directory from various locations.
+            <div class="card">
+              <div class="card-header">Technology Used</div>
+              <div class="card-body">
+                <span class="badge badge-secondary">asp.net-core-2.0</span>
+                <span class="badge badge-secondary">active-directory</span>
+                <span class="badge badge-secondary">c#</span>
+                <span class="badge badge-secondary">iis</span>
+              </div>
+            </div>
           </p>
         </li>
         <li>
           <h5>Directory Info (2018)</h5>
           <p>
-            A web application portal for finding directory-related information (e.g., mailing list and unit resources) within a particular organization.<br>
-            <span class="badge badge-secondary">expressjs</span>
-            <span class="badge badge-secondary">gruntjs</span>
-            <span class="badge badge-secondary">jwt</span>
-            <span class="badge badge-secondary">nginx</span>
-            <span class="badge badge-secondary">node.js</span>
-            <span class="badge badge-secondary">oauth-2.0</span>
-            <span class="badge badge-secondary">postgresql</span>
-            <span class="badge badge-secondary">reactjs</span>
-            <span class="badge badge-secondary">redis</span>
-            <span class="badge badge-secondary">twitter-bootstrap</span>
-            <span class="badge badge-secondary">webpack</span>
+            A web application portal for finding directory-related information (e.g., mailing list and unit resources) within a particular organization.
+            <div class="card">
+              <div class="card-header">Technology Used</div>
+              <div class="card-body">
+                <span class="badge badge-secondary">expressjs</span>
+                <span class="badge badge-secondary">gruntjs</span>
+                <span class="badge badge-secondary">jwt</span>
+                <span class="badge badge-secondary">nginx</span>
+                <span class="badge badge-secondary">node.js</span>
+                <span class="badge badge-secondary">oauth-2.0</span>
+                <span class="badge badge-secondary">postgresql</span>
+                <span class="badge badge-secondary">reactjs</span>
+                <span class="badge badge-secondary">redis</span>
+                <span class="badge badge-secondary">twitter-bootstrap</span>
+                <span class="badge badge-secondary">webpack</span>
+              </div>
+            </div>
           </p>
         </li>
         <li>
           <h5>Ume API (2018)</h5>
           <p>
-            A web API used for accessing general data related to a larger User Management project. Used to access resources as well as generating unique information for user accounts.<br>
-            <span class="badge badge-secondary">flask</span>
-            <span class="badge badge-secondary">jwt</span>
-            <span class="badge badge-secondary">mysql</span>
-            <span class="badge badge-secondary">nginx</span>
-            <span class="badge badge-secondary">python</span>
+            A web API used for accessing general data related to a larger User Management project. Used to access resources as well as generating unique information for user accounts.
+            <div class="card">
+              <div class="card-header">Technology Used</div>
+              <div class="card-body">
+                <span class="badge badge-secondary">flask</span>
+                <span class="badge badge-secondary">jwt</span>
+                <span class="badge badge-secondary">mysql</span>
+                <span class="badge badge-secondary">nginx</span>
+                <span class="badge badge-secondary">python</span>
+              </div>
+            </div>
           </p>
         </li>
         <li>
           <h5>Mailing List API (2018)</h5>
           <p>
-            This project allows for users or programs to query certain Mailman-related data via a web API type of platform. Built especially with Perl due to the limitations of the existing host Linux environment.<br>
-            <span class="badge badge-secondary">apache</span>
-            <span class="badge badge-secondary">caching</span>
-            <span class="badge badge-secondary">dancer2</span>
-            <span class="badge badge-secondary">jwt</span>
-            <span class="badge badge-secondary">mailman</span>
-            <span class="badge badge-secondary">perl</span>
-            <span class="badge badge-secondary">plack</span>
-            <span class="badge badge-secondary">starman</span>
+            This project allows for users or programs to query certain Mailman-related data via a web API type of platform. Built especially with Perl due to the limitations of the existing host Linux environment.
+            <div class="card">
+              <div class="card-header">Technology Used</div>
+              <div class="card-body">
+                <span class="badge badge-secondary">apache</span>
+                <span class="badge badge-secondary">caching</span>
+                <span class="badge badge-secondary">dancer2</span>
+                <span class="badge badge-secondary">jwt</span>
+                <span class="badge badge-secondary">mailman</span>
+                <span class="badge badge-secondary">perl</span>
+                <span class="badge badge-secondary">plack</span>
+                <span class="badge badge-secondary">starman</span>
+              </div>
+            </div>
+          </p>
+        </li>        
+        <li>
+          <h5>User Management (2017)</h5>
+          <p>A system for managing user accounts between local database, Active Directory, and Google. Expanded upon the work done by previous developers in this position by incorporating actively-used requirements into a new system of interconnected applications or other items.</p>
+          <ul>
+            <li>
+              <h5>User Management (2017) – web application</h5>
+              <p>
+                This web application was built as a means to add, edit, and manage staff (and to a limited amount, student) user accounts for a small to medium user base. Certain user account changes in User Management were synced with Active Directory and Google when changes were made.
+                <div class="card">
+                  <div class="card-header">Technology Used</div>
+                  <div class="card-body">
+                    <span class="badge badge-secondary">laravel</span>
+                    <span class="badge badge-secondary">mariadb</span>
+                    <span class="badge badge-secondary">mysql</span>
+                    <span class="badge badge-secondary">rabbitmq</span>
+                    <span class="badge badge-secondary">jquery</span>
+                  </div>
+                </div>
+              </p>
+            </li>
+            <li>
+              <h5>Student Data Sync (2018) – console application</h5>
+              <p>
+                The Student Data Sync program is made up of a variety of utilities that deal with:
+                <ul>
+                  <li>Blank Email Accounts</li>
+                  <li>Graduated Accounts</li>
+                  <li>New Accounts</li>
+                  <li>Mass Update</li>
+                  <li>Withdrawn Accounts</li>
+                </ul>
+                <i>Note: I think this program might have been started in 2017, but the Git-related repository was started at some point later in 2018.</i><br /><br />
+                <div class="card">
+                  <div class="card-header">Technology Used</div>
+                  <div class="card-body">
+                    <span class="badge badge-secondary">python</span>
+                    <span class="badge badge-secondary">php</span>
+                    <span class="badge badge-secondary">rabbitmq</span>
+                  </div>
+                </div>
+              </p>
+            </li>
+            <li>
+              <h5>Message Receiver for Windows (2017) – console application</h5>
+              <p>
+                This program was built to listen for input passed along from the User Management web application and Student Data Sync component via RabbitMQ. The RabbitMQ approach was later phased out in favor of a web API approach with the Directory API project.
+                <div class="card">
+                  <div class="card-header">Technology Used</div>
+                  <div class="card-body">
+                    <span class="badge badge-secondary">c#</span>
+                    <span class="badge badge-secondary">rabbitmq</span>
+                    <span class="badge badge-secondary">active-directory</span>
+                  </div>
+                </div>
+              </p>
+            </li>
+            <li>
+              <h5>Message Receiver Service (2017) – service</h5>
+              <p>
+                This service was built to run the Message Receiver for Windows program.<br>
+                <div class="card">
+                  <div class="card-header">Technology Used</div>
+                  <div class="card-body">
+                    <span class="badge badge-secondary">c#</span>
+                  </div>
+                </div>
+              </p>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <h5><a href="https://github.com/summea/ideal">Ideal</a> (2012)</h5>
+          <p>
+            Ideal is a simple MVC-based web framework written in PHP. Ideal began as a way to explore the building of a framework while, at the same time, providing a tool for future use.<br>
+            <div class="card">
+              <div class="card-header">Technology Used</div>
+              <div class="card-body">
+                <span class="badge badge-secondary">php</span>
+              </div>
+            </div>
           </p>
         </li>
+      </ul>
+      <a name="server-administration" />
+      <h3>Server Administration</h3>
+      <ul>
+        <li>
+          <h5>CentOS (2016)</h5>
+          Have worked with CentOS in production since Fall 2016. Began with CentOS 6 and CentOS 7 (if I remember correctly) that were running in production when I started my Programmer Analyst job. Someone else at my work (B) spins up virtual machines for servers related to my area of work, but I generally manage these servers over time. Began using CentOS 8 in production in 2020. Updates were generally run throughout the year to keep the servers up to date, but tried to be more consistent with this by running updates once a month on an ongoing basis since 2020 (if I remember correctly).<br /><br />
+        </li>
+        <li>
+          <h5>Debian (2021)</h5>
+          Due to the EOL decision for CentOS 8, B and I decided to try Debian going forward for general virtual machines. Have worked with Debian 10 in production since Spring 2020. Updates are generally run on a monthly basis.<br /><br />
+        </li>
+        <li>
+          <h5>Windows Server 2016 (2017)</h5>
+          Have worked with Windows Server 2016 in production since Spring 2017 [2][3]. I began running updates on a monthly basis in 2021.<br /><br />
+        </li>
+      </ul>
+      <a name="education" />
+      <h3>Education Experience</h3><br />
+      <h4>Schools</h4>
+      <ul>
+        <li>
+          <h5>Oregon Institute of Technology</h5>
+          BS: Software Engineering Technology<br />
+          (2013-2016)<br /><br />
+        </li>
+        <li>
+          <h5>Portland State University</h5>
+          BA: Japanese<br />
+          (2004-2007)<br /><br />
+        </li>
+        <li>
+          <h5>Clackamas Community College</h5>
+          AA: AAOT Degree
+          (2002-2004)<br /><br />
+        </li>
+      </ul>
+      <h4>Projects</h4>
+      <ul>
         <li>
           <h5><a href="https://github.com/summea/kanjoto">kanjoto</a> (2015-2016)</h5>
           <p>
             Music composition is often more than randomly selecting musical notes—it involves logical patterns, progressions, and emotions. The goal of the KANJOTO project is to teach a machine to generate music based upon given emotions using the Android platform.<br>
-            <span class="badge badge-secondary">android</span>
-            <span class="badge badge-secondary">java</span>
+            <div class="card">
+              <div class="card-header">Technology Used</div>
+              <div class="card-body">
+                <span class="badge badge-secondary">android</span>
+                <span class="badge badge-secondary">java</span>
+              </div>
+            </div>
           </p>
         </li>
         <li>
           <h5><a href="https://github.com/summea/kask-kiosk">Kiosk</a> (2014-2015)</h5>
           <p>
             Team-based project for junior year at school written primarily in C#. The Kiosk project provides a basic implementation of a job application kiosk where users can fill out and submit sample job applications.<br>
-            <span class="badge badge-secondary">asp.net mvc</span>
-            <span class="badge badge-secondary">c#</span>
-          </p>
-        </li>
-        <li>
-          <h5><a href="https://github.com/summea/ideal">Ideal</a> (2012)</h5>
-          <p>
-            Ideal is a simple MVC-based web framework written in PHP. Ideal began as a way to explore the building of a framework while, at the same time, providing a tool for future use.<br>
-            <span class="badge badge-secondary">php</span>
+            <div class="card">
+              <div class="card-header">Technology Used</div>
+              <div class="card-body">
+                <span class="badge badge-secondary">asp.net mvc</span>
+                <span class="badge badge-secondary">c#</span>
+              </div>
+            </div>
           </p>
         </li>
       </ul>
+      <hr>
+      <h5>References:</h5>
+      <ol>
+        <li><a href="https://docs.microsoft.com/en-us/sql/reporting-services/create-deploy-and-manage-mobile-and-paginated-reports?view=sql-server-ver15">What is SQL Server Reporting Services (SSRS)?</a></li>
+        <li>Stickies Note about Windows Server 2016</li>
+        <li>Work Log 2016-2017</li>
+      </ol>
     </div>
-    <br><br>
   </body>
 </html>
