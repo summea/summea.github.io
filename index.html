@@ -28,7 +28,7 @@
       <h3>Programming Projects</h3>
       <ul>
       <li>
-          <h5>Check-In Check-Out 2 (2020-Present)</h5>
+          <h5>Check-In Check-Out 2 (September 2020 &ndash; Present)</h5>
           <p>
             A rebuild of the previous Check-In Check-Out web application due to a software issue between Django and SQL Server in relation to UUID database values. The new version was built with Laravel 7 and was later upgraded to Laravel 8. This web application is used to help instructors and staff input data for positive student behavior and critical incidents where events impacting something (e.g., classroom instructional time) happen. Then, this data can be retrieved in the application or through paginated SSRS reports in the Student Information System [1]. Much of the data is stored in the related Student Information System (SIS) backend SQL Server database, while some other program-specific data is stored in a local MySQL database.
             <div class="card">
@@ -44,7 +44,7 @@
           </p>
         </li>
         <li>
-          <h5>Checkout Board (2019-Present)</h5>
+          <h5>Checkout Board (September 2019 &ndash; Present)</h5>
           <p>
             A potential digital "whiteboard" replacement to keep track of staff availability when out of office.
             <div class="card">
@@ -61,25 +61,7 @@
           </p>
         </li>
         <li>
-          <h5>Check-In Check-Out (2019-2020)</h5>
-          <p>
-            A simple web application project that allows users to add and manage student behavior data. I think this is used especially for student-related positive behavior and critical incident data entry and reporting. For some time, this program was used by staff in the school district, but was later replaced by Check-In Check-Out 2 in 2020.
-            <div class="card">
-              <div class="card-header">Technology Used</div>
-              <div class="card-body">
-                <span class="badge badge-secondary">django</span>
-                <span class="badge badge-secondary">postgresql</span>
-                <span class="badge badge-secondary">react</span>
-                <span class="badge badge-secondary">ssrs</span>
-                <span class="badge badge-secondary">sql-server</span>
-                <span class="badge badge-secondary">nginx </span>
-                <span class="badge badge-secondary">uwsgi</span>
-              </div>
-            </div>
-          </p>
-        </li>
-        <li>
-          <h5>Dashboard (2019-Present)</h5>
+          <h5>Dashboard (August 2019 &ndash; Present)</h5>
           <p>
             A simple web application project that displays data from User Management. The backend is built with Flask, and the frontend is built with React.<br />
             <div class="card">
@@ -96,7 +78,25 @@
           </p>
         </li>
         <li>
-          <h5>Upload Portal (2019-Present)</h5>
+          <h5>Check-In Check-Out (July 2019 &ndash; September 2020)</h5>
+          <p>
+            A simple web application project that allows users to add and manage student behavior data. I think this is used especially for student-related positive behavior and critical incident data entry and reporting. For some time, this program was used by staff in the school district, but was later replaced by Check-In Check-Out 2 in 2020.
+            <div class="card">
+              <div class="card-header">Technology Used</div>
+              <div class="card-body">
+                <span class="badge badge-secondary">django</span>
+                <span class="badge badge-secondary">postgresql</span>
+                <span class="badge badge-secondary">react</span>
+                <span class="badge badge-secondary">ssrs</span>
+                <span class="badge badge-secondary">sql-server</span>
+                <span class="badge badge-secondary">nginx </span>
+                <span class="badge badge-secondary">uwsgi</span>
+              </div>
+            </div>
+          </p>
+        </li>        
+        <li>
+          <h5>Upload Portal (March 2019 &ndash; Present)</h5>
           <p>
             An extremely simple web application for uploading and managing files. I hesitate to include this in the project list because this is more of a trivial application. If it is helpful in the future, there might be room to work on this more, but for now this is a simple web application that was more of an introduction to using Django for something useful.<br /><br />
             <b>Update (2021):</b> This application has turned out to be useful for times where it's difficult to transfer files from one server to another. In particular, when transferring something from an older Windows Server elsewhere, this application was an easier way to safely transfer files.
@@ -113,47 +113,7 @@
           </p>
         </li>
         <li>
-          <h5>Mailing List Sync (2018-Present)</h5>
-          <p>
-            Scripts that sync mailing lists between Google Groups and Mailman. This project is a collection of individual Perl scripts that:
-            <ol>
-              <li>Get a list of all available organization mailing lists from Ume API</li>
-              <li>Get all members of each individual list using Google's API</li>
-              <li>Save found members to individual lists for Mailman</li>
-              <li>Import mailing list changes into Mailman</li>
-              <li>Update sending rights for users with mailing list changes</li>
-            </ol>
-            <br />
-            Previously, this project ran the first three steps all at one time, but this led to times where Ume API was so busy with the related requests that it couldn't handle new incoming requests. Thus, there would be times where Ume API was unavailable during some of the processing taking place with the Mailing List Sync. In 2020, there was the idea to address this unavailability issue by using the task queue program called Celery. So now, when requests for mailing list members are made, they are taken up as tasks to run independently, so Ume API now can fire off tasks and provides a result URL that can be checked for when the task is completed. Once completed, the desired information is returned without causing a slowdown for Ume API, which means that it can continue to handle other incoming requests as expected.<br /><br />
-            <div class="card">
-              <div class="card-header">Technology Used</div>
-              <div class="card-body">
-                <span class="badge badge-secondary">celery</span>
-                <span class="badge badge-secondary">mailman</span>
-                <span class="badge badge-secondary">perl</span>
-                <span class="badge badge-secondary">ume-api</span>
-              </div>
-            </div>
-          </p>
-        </li>
-        <li>
-          <h5>Directory API (2018-Present)</h5>
-          <p>
-            A web API used to communicate with Active Directory from various locations.
-            <div class="card">
-              <div class="card-header">Technology Used</div>
-              <div class="card-body">
-                <span class="badge badge-secondary">asp.net-core-2.0</span>
-                <span class="badge badge-secondary">paseto</span>
-                <span class="badge badge-secondary">active-directory</span>
-                <span class="badge badge-secondary">c#</span>
-                <span class="badge badge-secondary">iis</span>
-              </div>
-            </div>
-          </p>
-        </li>
-        <li>
-          <h5>Directory Info (2018-Present)</h5>
+          <h5>Directory Info (January 2019 &ndash; Present)</h5>
           <p>
             A web application portal for finding directory-related information (e.g., mailing list and unit resources) within a particular organization.
             <div class="card">
@@ -175,23 +135,47 @@
           </p>
         </li>
         <li>
-          <h5>Ume API (2018-Present)</h5>
+          <h5>Directory API (September 2018 &ndash; Present)</h5>
           <p>
-            A web API used for accessing general data related to a larger User Management project. Used to access resources as well as generating unique information for user accounts.
+            A web API used to communicate with Active Directory from various locations.
             <div class="card">
               <div class="card-header">Technology Used</div>
               <div class="card-body">
-                <span class="badge badge-secondary">flask</span>
-                <span class="badge badge-secondary">jwt</span>
-                <span class="badge badge-secondary">mysql</span>
-                <span class="badge badge-secondary">nginx</span>
-                <span class="badge badge-secondary">python</span>
+                <span class="badge badge-secondary">asp.net-core-2.0</span>
+                <span class="badge badge-secondary">paseto</span>
+                <span class="badge badge-secondary">active-directory</span>
+                <span class="badge badge-secondary">c#</span>
+                <span class="badge badge-secondary">iis</span>
               </div>
             </div>
           </p>
         </li>
         <li>
-          <h5>Mailing List API (2018-Present)</h5>
+          <h5>Mailing List Sync (September 2018 &ndash; Present)</h5>
+          <p>
+            Scripts that sync mailing lists between Google Groups and Mailman. This project is a collection of individual Perl scripts that:
+            <ol>
+              <li>Get a list of all available organization mailing lists from Ume API</li>
+              <li>Get all members of each individual list using Google's API</li>
+              <li>Save found members to individual lists for Mailman</li>
+              <li>Import mailing list changes into Mailman</li>
+              <li>Update sending rights for users with mailing list changes</li>
+            </ol>
+            <br />
+            Previously, this project ran the first three steps all at one time, but this led to times where Ume API was so busy with the related requests that it couldn't handle new incoming requests. Thus, there would be times where Ume API was unavailable during some of the processing taking place with the Mailing List Sync. In 2020, there was the idea to address this unavailability issue by using the task queue program called Celery. So now, when requests for mailing list members are made, they are taken up as tasks to run independently, so Ume API now can fire off tasks and provides a result URL that can be checked for when the task is completed. Once completed, the desired information is returned without causing a slowdown for Ume API, which means that it can continue to handle other incoming requests as expected.<br /><br />
+            <div class="card">
+              <div class="card-header">Technology Used</div>
+              <div class="card-body">
+                <span class="badge badge-secondary">celery</span>
+                <span class="badge badge-secondary">mailman</span>
+                <span class="badge badge-secondary">perl</span>
+                <span class="badge badge-secondary">ume-api</span>
+              </div>
+            </div>
+          </p>
+        </li>                
+        <li>
+          <h5>Mailing List API (August 2018 &ndash; Present)</h5>
           <p>
             This project allows for users or programs to query certain Mailman-related data via a web API type of platform. Built especially with Perl due to the limitations of the existing host Linux environment.
             <div class="card">
@@ -208,13 +192,170 @@
               </div>
             </div>
           </p>
-        </li>        
+        </li>
         <li>
-          <h5>User Management (2017-Present)</h5>
+          <h5>Ume API (August 2018 &ndash; Present)</h5>
+          <p>
+            A web API used for accessing general data related to a larger User Management project. Used to access resources as well as generating unique information for user accounts.
+            <div class="card">
+              <div class="card-header">Technology Used</div>
+              <div class="card-body">
+                <span class="badge badge-secondary">flask</span>
+                <span class="badge badge-secondary">jwt</span>
+                <span class="badge badge-secondary">mysql</span>
+                <span class="badge badge-secondary">nginx</span>
+                <span class="badge badge-secondary">python</span>
+              </div>
+            </div>
+          </p>
+        </li>
+        <li>
+          <h5>User Management (July 2017 &ndash; Present)</h5>
           <p>A system for managing user accounts between local database, Active Directory, and Google. Expanded upon the work done by previous developers in this position by incorporating actively-used requirements into a new system of interconnected applications or other items.</p>
           <ul>
             <li>
-              <h5>User Management (2017-Present) – web application</h5>
+              <h5>Process User Info From HR (April 2020 &ndash; Present) – console application</h5>
+              <p>
+                This program reads in information that can then be used by the User Management web application and/or other programs. It is based on an earlier program started in 2017 [6], and both of these applications were based on previous work done by the previous person in my position at the work organization.
+                <div class="card">
+                  <div class="card-header">Technology Used</div>
+                  <div class="card-body">
+                    <span class="badge badge-secondary">python</span>
+                    <span class="badge badge-secondary">mariadb</span>
+                    <span class="badge badge-secondary">pytest</span>
+                  </div>
+                </div><br />
+                <div class="card">
+                  <div class="card-header">Technology Previously Used</div>
+                  <div class="card-body">
+                    <span class="badge badge-secondary">php</span>
+                    <span class="badge badge-secondary">phpunit</span>
+                  </div>
+                </div>
+              </p>
+            </li>
+            <li>
+              <h5>Compare Student Email Addresses (March 2019 &ndash; Present) – console application</h5>
+              <p>
+                This program compares student email addresses between the User Management web application database and the Student Information System (SIS) to see if there are discrepancies between a student's email address in each location. If there's a discrepancy, change information is gathered and then sent to the organization that manages the SIS so that the student's email address will be the same in both places [5].
+                <div class="card">
+                  <div class="card-header">Technology Used</div>
+                  <div class="card-body">
+                    <span class="badge badge-secondary">python</span>
+                    <span class="badge badge-secondary">mariadb</span>
+                    <span class="badge badge-secondary">pytest</span>
+                    [8]
+                  </div>
+                </div><br />
+                <div class="card">
+                  <div class="card-header">Technology Previously Used</div>
+                  <div class="card-body">
+                    <span class="badge badge-secondary">php</span>
+                    <span class="badge badge-secondary">phpunit</span>
+                    <i>Note: This was for the "classic" version of this program that was used approximately around February 2017 to February 2019 [6].</i>
+                  </div>
+                </div>
+              </p>
+            </li>
+            <li>
+              <h5>Process Expiring Accounts (October 2017 &ndash; Present) – console application</h5>
+              <p>
+                This program deals with user accounts that are at a point where they need to be disabled or moved to another location. This program also sends out email notifications for certain day-number increments before an account is set to be disabled so that users have advance warning that they need to do something in order to transfer their account information elsewhere (if desired) before their account becomes unavailable [5].
+                <div class="card">
+                  <div class="card-header">Technology Used</div>
+                  <div class="card-body">
+                    <span class="badge badge-secondary">python</span>
+                    <span class="badge badge-secondary">mariadb</span>
+                    <span class="badge badge-secondary">pytest</span>
+                  </div>
+                </div>                
+              </p>
+            </li>
+            <li>
+              <h5>Process Expiring Passwords (October 2017 &ndash; Present) – console application</h5>
+              <p>
+                This program deals with determining when user accounts need to have a user account password changed. When a user's account password is nearing expiration, email notifications are sent out for certain day-number increments beforehand to the user in question so that the user knows that their password needs to be changed [5].
+                <div class="card">
+                  <div class="card-header">Technology Used</div>
+                  <div class="card-body">
+                    <span class="badge badge-secondary">python</span>
+                    <span class="badge badge-secondary">mariadb</span>
+                    <span class="badge badge-secondary">pytest</span>
+                  </div>
+                </div>
+              </p>
+            </li>
+            <li>
+              <h5>Student Data Sync (October 2018 &ndash; Present) – console application</h5>
+              <p>
+                The Student Data Sync program is made up of a variety of utilities that deal with:
+                <ul>
+                  <li>Blank Email Accounts</li>
+                  <li>Graduated Accounts</li>
+                  <li>New Accounts</li>
+                  <li>Mass Update</li>
+                  <li>Withdrawn Accounts</li>
+                </ul>
+                <i>Note: I think this program might have been started in 2017, but the Git-related repository was started at some point later in 2018.</i><br /><br />
+                <div class="card">
+                  <div class="card-header">Technology Used</div>
+                  <div class="card-body">
+                    <span class="badge badge-secondary">python</span>
+                    <span class="badge badge-secondary">pytest</span>
+                    <span class="badge badge-secondary">mariadb</span>
+                  </div>
+                </div><br />
+                <div class="card">
+                  <div class="card-header">Technology Previously Used</div>
+                  <div class="card-body">
+                    <span class="badge badge-secondary">php</span>
+                    <span class="badge badge-secondary">rabbitmq</span>
+                  </div>
+                </div>
+              </p>
+            </li>
+            <li>
+              <h5>User Account Status Sync (September 2017 &ndash; Present) – console application</h5>
+              <p>
+                This program is used to check if a user in User Management exists in Active Directory and Google's G Suite (or Google Workspace [7]) and then inputs that information into the User Management web application database for further use in the web application itself [5].
+                <div class="card">
+                  <div class="card-header">Technology Used</div>
+                  <div class="card-body">
+                    <span class="badge badge-secondary">python</span>
+                    <span class="badge badge-secondary">mariadb</span>
+                    <span class="badge badge-secondary">pytest</span>
+                  </div>
+                </div><br />
+              </p>
+            </li>
+            <li>
+              <h5>Message Receiver for Windows (August 2017 &ndash; August 2018) – console application</h5>
+              <p>
+                This program was built to listen for input passed along from the User Management web application and Student Data Sync component via RabbitMQ. The RabbitMQ approach was later phased out in favor of a web API approach with the Directory API project.
+                <div class="card">
+                  <div class="card-header">Technology Used</div>
+                  <div class="card-body">
+                    <span class="badge badge-secondary">c#</span>
+                    <span class="badge badge-secondary">rabbitmq</span>
+                    <span class="badge badge-secondary">active-directory</span>
+                  </div>
+                </div>
+              </p>
+            </li>
+            <li>
+              <h5>Message Receiver Service (August 2017 &ndash; August 2018) – service</h5>
+              <p>
+                This service was built to run the Message Receiver for Windows program.<br />
+                <div class="card">
+                  <div class="card-header">Technology Used</div>
+                  <div class="card-body">
+                    <span class="badge badge-secondary">c#</span>
+                  </div>
+                </div>
+              </p>
+            </li>
+            <li>
+              <h5>User Management (July 2017 &ndash; Present) – web application</h5>
               <p>
                 This web application was built as a means to add, edit, and manage staff (and to a limited amount, student) user accounts for a small to medium user base. With this web application, certain user account changes in User Management are able to be synced with Active Directory and Google when changes are made.<br /><br />
                 Wrote many feature and unit tests over time for this web application. Having a test suite has been helpful in ensuring that things are working as intended after making changes and it also has been really helpful for times of refactoring and reorganization.<br /><br />                
@@ -237,58 +378,10 @@
                 </div>
               </p>
             </li>
-            <li>
-              <h5>Student Data Sync (2018-Present) – console application</h5>
-              <p>
-                The Student Data Sync program is made up of a variety of utilities that deal with:
-                <ul>
-                  <li>Blank Email Accounts</li>
-                  <li>Graduated Accounts</li>
-                  <li>New Accounts</li>
-                  <li>Mass Update</li>
-                  <li>Withdrawn Accounts</li>
-                </ul>
-                <i>Note: I think this program might have been started in 2017, but the Git-related repository was started at some point later in 2018.</i><br /><br />
-                <div class="card">
-                  <div class="card-header">Technology Used</div>
-                  <div class="card-body">
-                    <span class="badge badge-secondary">python</span>
-                    <span class="badge badge-secondary">php</span>
-                    <span class="badge badge-secondary">rabbitmq</span>
-                  </div>
-                </div>
-              </p>
-            </li>
-            <li>
-              <h5>Message Receiver for Windows (2017-2018) – console application</h5>
-              <p>
-                This program was built to listen for input passed along from the User Management web application and Student Data Sync component via RabbitMQ. The RabbitMQ approach was later phased out in favor of a web API approach with the Directory API project.
-                <div class="card">
-                  <div class="card-header">Technology Used</div>
-                  <div class="card-body">
-                    <span class="badge badge-secondary">c#</span>
-                    <span class="badge badge-secondary">rabbitmq</span>
-                    <span class="badge badge-secondary">active-directory</span>
-                  </div>
-                </div>
-              </p>
-            </li>
-            <li>
-              <h5>Message Receiver Service (2017-2018) – service</h5>
-              <p>
-                This service was built to run the Message Receiver for Windows program.<br />
-                <div class="card">
-                  <div class="card-header">Technology Used</div>
-                  <div class="card-body">
-                    <span class="badge badge-secondary">c#</span>
-                  </div>
-                </div>
-              </p>
-            </li>
           </ul>
         </li>
         <li>
-          <h5><a href="https://github.com/summea/ideal">Ideal</a> (2012-2012)</h5>
+          <h5><a href="https://github.com/summea/ideal">Ideal</a> (2012 &ndash; 2012)</h5>
           <p>
             Ideal is a simple MVC-based web framework written in PHP. Ideal began as a way to explore the building of a framework while, at the same time, providing a tool for future use.<br />
             <div class="card">
@@ -304,15 +397,15 @@
       <h3>Server Administration</h3>
       <ul>
         <li>
-          <h5>CentOS (2016-Present)</h5>
+          <h5>CentOS (2016 &ndash; Present)</h5>
           Have worked with CentOS in production since Fall 2016. Began with CentOS 6 and CentOS 7 (if I remember correctly) that were running in production when I started my Programmer Analyst job. Someone else at my work (B) spins up virtual machines for servers related to my area of work, but I generally manage these servers over time. Began using CentOS 8 in production in 2020. Updates were generally run throughout the year to keep the servers up to date, but tried to be more consistent with this by running updates once a month on an ongoing basis since 2020 (if I remember correctly).<br /><br />
         </li>
         <li>
-          <h5>Debian (2021-Present)</h5>
+          <h5>Debian (2021 &ndash; Present)</h5>
           Due to the EOL decision for CentOS 8, B and I decided to try Debian going forward for general virtual machines. Have worked with Debian 10 in production since Spring 2020. Updates are generally run on a monthly basis.<br /><br />
         </li>
         <li>
-          <h5>Windows Server 2016 (2017-Present)</h5>
+          <h5>Windows Server 2016 (2017 &ndash; Present)</h5>
           Have worked with Windows Server 2016 in production since Spring 2017 [2][3]. I began running updates on a monthly basis in 2021.<br /><br />
         </li>
       </ul>
@@ -339,7 +432,7 @@
       <h4>School Projects</h4>
       <ul>
         <li>
-          <h5><a href="https://github.com/summea/kanjoto">kanjoto</a> (2015-2016)</h5>
+          <h5><a href="https://github.com/summea/kanjoto">kanjoto</a> (2015 &ndash; 2016)</h5>
           <p>
             Music composition is often more than randomly selecting musical notes—it involves logical patterns, progressions, and emotions. The goal of the KANJOTO project is to teach a machine to generate music based upon selected emotion options using the Android platform. For example, if I wanted to hear music that sounds "happy", I would choose the "happy" emotion and the program would play generated music that is based on past "happy" labeled musical patterns.<br /><br />
             This was a senior project that was worked on especially throughout the school year, and I had the opportunity to talk about the program over time and demonstrate the program in class. Near the end of the school year, there was also some sort of event where students had the opportunity to have a "booth" where senior projects could be demonstrated to students and visitors (including representatives from companies).<br /><br />
@@ -354,7 +447,7 @@
           </p>
         </li>
         <li>
-          <h5><a href="https://github.com/summea/kask-kiosk">Kask Kiosk</a> (2014-2015)</h5>
+          <h5><a href="https://github.com/summea/kask-kiosk">Kask Kiosk</a> (2014 &ndash; 2015)</h5>
           <p>
             Kask Kiosk was a team-based project for junior year at school written primarily in C#. This project provides a basic implementation of a job application kiosk where users can fill out and submit sample job applications. If I remember correctly, I think I worked more on the web application side of this project, while other members of the group might have worked on that part as well or on other parts like the database, etc.<br />
             <div class="card">
@@ -370,12 +463,17 @@
       </ul>
       <hr>
       <h5>References:</h5>
-      <ol>
-        <li><a href="https://docs.microsoft.com/en-us/sql/reporting-services/create-deploy-and-manage-mobile-and-paginated-reports?view=sql-server-ver15">What is SQL Server Reporting Services (SSRS)?</a></li>
-        <li>Stickies Note about Windows Server 2016</li>
-        <li>Work Log 2016-2017</li>
-        <li>Personal LinkedIn Profile</li>
-      </ol>
+      <ul>
+        <li>[1] <a href="https://docs.microsoft.com/en-us/sql/reporting-services/create-deploy-and-manage-mobile-and-paginated-reports?view=sql-server-ver15">What is SQL Server Reporting Services (SSRS)?</a></li>
+        <li>[2] Stickies Note about Windows Server 2016</li>
+        <li>[3] Work Log 2016-2017</li>
+        <li>[4] Personal LinkedIn Profile</li>
+        <li>[5] Programming DokuWiki</li>
+        <li>[6] GitLab repositories at work</li>
+        <li>[7] G Suite is now Google Workspace (https://support.google.com/a/answer/10075155?hl=en) accessed on 2021-06-29</li>
+        <li>[8] Work Log 2016-2017</li>
+        <i>Note: Some project dates are referenced from past work logs and GitLab repositories. Dates are generally approximate.</i>
+      </ul>
     </div>
   </body>
 </html>
