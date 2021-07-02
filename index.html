@@ -25,7 +25,7 @@
         </li>
       </ul>    
       <a name="programming-projects" />
-      <h3>Programming Projects</h3>
+      <h3>Programming Projects</h3><br />
       <ul>
       <li>
           <h5>Check-In Check-Out 2 (September 2020 &ndash; Present)</h5>
@@ -137,7 +137,7 @@
         <li>
           <h5>Directory API (September 2018 &ndash; Present)</h5>
           <p>
-            A web API used to communicate with Active Directory from various locations.
+            A web API used to communicate with Active Directory from various locations. This program is especially useful for adding, updating, or deleting user objects in Active Directory and is especially used with the User Management web application and the Student Data Sync console application.
             <div class="card">
               <div class="card-header">Technology Used</div>
               <div class="card-body">
@@ -173,7 +173,7 @@
               </div>
             </div>
           </p>
-        </li>                
+        </li>
         <li>
           <h5>Mailing List API (August 2018 &ndash; Present)</h5>
           <p>
@@ -296,6 +296,22 @@
                   <li>Mass Update</li>
                   <li>Withdrawn Accounts</li>
                 </ul>
+                
+                <b>Blank Email Accounts</b><br />
+                This process is used to find which students in the Student Information System (SIS) have no district-allocated email address set in the student's SIS information. The latest known student email address is then found in User Management and outputted to a file for further processing with the SIS. After this process runs, the student email address should then be updated in the SIS to match what is known in User Management.<br /><br />
+                
+                <b>Graduated Accounts</b><br />
+                This process is used to find which students have graduation dates for a specified date range and can be run to send out warning notification emails about account expiration. This process can also be run so that it further deals with graduated student accounts when ready.<br /><br />
+                
+                <b>New Accounts</b><br />
+                This process is used to build new student accounts in User Management, Active Directory, and Google.<br /><br />
+                
+                <b>Mass Update</b><br />
+                This process is used to output a file that contains general update information for later use by another script that actually makes the changes in Active Directory. In the past, this "Mass Update" program actually made changes during the processing, but this approach took hours to complete at the time.<br /><br />
+                
+                <b>Withdrawn Accounts</b><br />
+                This process is used to find which students are withdrawn (depending on when this process is run) and then appropriately deals with the student's accounts in User Management, Active Directory, and Google.<br /><br />
+                
                 <i>Note: I think this program might have been started in 2017, but the Git-related repository was started at some point later in 2018.</i><br /><br />
                 <div class="card">
                   <div class="card-header">Technology Used</div>
@@ -359,7 +375,7 @@
               <p>
                 This web application was built as a means to add, edit, and manage staff (and to a limited amount, student) user accounts for a small to medium user base. With this web application, certain user account changes in User Management are able to be synced with Active Directory and Google when changes are made.<br /><br />
                 Wrote many feature and unit tests over time for this web application. Having a test suite has been helpful in ensuring that things are working as intended after making changes and it also has been really helpful for times of refactoring and reorganization.<br /><br />                
-                After learning more, began to heavily reorganize this web application in 2021 with the intent of possibly refactoring code where helpful. Began breaking up huge class files (regular program and test related class files) into smaller, more-focused classes.<br />
+                Began to heavily reorganize this web application in 2021 with the intent of possibly refactoring code where helpful. Started to reorganize project code earlier, but the priority to do this was not as high for some time. In Spring/Summer of 2021, worked on breaking up huge class files (regular program and test related class files) into smaller, more-focused classes.<br />
                 <div class="card">
                   <div class="card-header">Technology Used</div>
                   <div class="card-body">
@@ -382,7 +398,7 @@
           </ul>
         </li>
         <li>
-          <h5><a href="https://github.com/summea/ideal">Ideal</a> (2012 &ndash; 2012)</h5>
+          <h5><a href="https://github.com/summea/ideal">Ideal</a> (2012)</h5>
           <p>
             Ideal is a simple MVC-based web framework written in PHP. Ideal began as a way to explore the building of a framework while, at the same time, providing a tool for future use.<br />
             <div class="card">
@@ -393,13 +409,54 @@
             </div>
           </p>
         </li>
+        <li>
+          <h5>Mi 2 (2007) - web application</h5>
+          <p>
+            Mi 2 was a Content Management System (CMS) built and used especially for K-12 school websites [9][12].<br />
+            <div class="card">
+              <div class="card-header">Technology Used</div>
+              <div class="card-body">
+                <span class="badge badge-secondary">php</span>
+                <span class="badge badge-secondary">mysql</span>
+              </div>
+            </div>
+          </p>
+        </li>
+        <li>
+          <h5>Staff Blogs (Summer 2005) - web application</h5>
+          <p>
+            This was a web application built so that staff members (at the organization for which I worked) could have their own blog online [9]. This was far enough in the past that building an application for this purpose seemed to make sense. WordPress, for example, appears to have started in 2003. [10]<br /><br />
+            As far as I can remember, this program continued on for some time (years) until it was eventually no longer needed. I think WordPress might have been used for some time after this for users that still wanted to have their own organization-based blog [11].<br /><br />
+            It might be the case that this application was rebuilt using CakePHP at a later time, possibly between Fall 2006 and Summer 2007 [12].<br />
+            <div class="card">
+              <div class="card-header">Technology Used</div>
+              <div class="card-body">
+                <span class="badge badge-secondary">php</span>
+                <span class="badge badge-secondary">mysql</span>
+              </div>
+            </div>
+          </p>
+        </li>
+        <li>
+          <h5>Staff Directory (Summer 2002) - web application</h5>
+          <p>
+            This program was a web application used to keep track of staff directory information within the related organization. It was a place where people could search for staff and see contact information (including a staff photo) for each found result. I think it was also possible to add, update, and delete staff directory information [9][12].<br />
+            <div class="card">
+              <div class="card-header">Technology Used</div>
+              <div class="card-body">
+                <span class="badge badge-secondary">php</span>
+                <span class="badge badge-secondary">mysql</span>
+              </div>
+            </div>
+          </p>
+        </li>
       </ul>
       <a name="server-administration" />
-      <h3>Server Administration</h3>
+      <h3>Server Administration</h3><br />
       <ul>
         <li>
           <h5>CentOS (2016 &ndash; Present)</h5>
-          Have worked with CentOS in production since Fall 2016. Began with CentOS 6 and CentOS 7 (if I remember correctly) that were running in production when I started my Programmer Analyst job. Someone else at my work (B) spins up virtual machines for servers related to my area of work, but I generally manage these servers over time. Began using CentOS 8 in production in 2020. Updates were generally run throughout the year to keep the servers up to date, but tried to be more consistent with this by running updates once a month on an ongoing basis since 2020 (if I remember correctly).<br /><br />
+          Have worked with CentOS in production since Fall 2016. Began with CentOS 6 and CentOS 7 (if I remember correctly) that were running in production when I started my Programmer Analyst job. Someone else at my work (B) spins up virtual machines for servers related to my area of work, but I generally manage these servers over time. Began using CentOS 8 in production in 2020. Updates were generally run throughout the year to keep the servers up to date, but tried to be more consistent with this by running updates once a month (generally) on an ongoing basis since 2020 (if I remember correctly).<br /><br />
         </li>
         <li>
           <h5>Debian (2021 &ndash; Present)</h5>
@@ -407,7 +464,7 @@
         </li>
         <li>
           <h5>Windows Server 2016 (2017 &ndash; Present)</h5>
-          Have worked with Windows Server 2016 in production since Spring 2017 [2][3]. I began running updates on a monthly basis in 2021.<br /><br />
+          Have worked with Windows Server 2016 in production since Spring 2017 [2][3]. I began running updates on a monthly basis (generally) in 2021.<br /><br />
         </li>
       </ul>
       <a name="education" />
@@ -473,6 +530,10 @@
         <li>[6] GitLab repositories at work</li>
         <li>[7] G Suite is now Google Workspace (https://support.google.com/a/answer/10075155?hl=en) accessed on 2021-06-29</li>
         <li>[8] Work Log 2016-2017</li>
+        <li>[9] Past Personal Resume</li>
+        <li>[10] Wikipedia WordPress Entry (https://en.wikipedia.org/wiki/WordPress) accessed on 2021-07-02</li>
+        <li>[11] Emails from Drew (2005)</li>
+        <li>[12] Code Archive Backup Files</li>
         <i>Note: Some project dates are referenced from past work logs and GitLab repositories. Dates are generally approximate.</i>
       </ul>
     </div>
