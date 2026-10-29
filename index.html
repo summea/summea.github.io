@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html>
   <head>
@@ -7,7 +8,7 @@
       <meta name="description" content="showcase">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-      <link rel="stylesheet" href="css/main.css">
+      <link rel="stylesheet" href="css/experience.css">
   </head>
   <body>
     <a name="top" />
@@ -27,6 +28,24 @@
       <a name="programming-projects" />
       <h3>Programming Projects</h3><br />
       <ul>
+        <li>
+          <h5>Check-In Check-Out (July 2019 &ndash; September 2020)</h5>
+          <p>
+            A simple web application project that allows users to add and manage student behavior data. I think this is used especially for student-related positive behavior and critical incident data entry and reporting. For some time, this program was used by staff in the school district, but was later replaced by Check-In Check-Out 2 in 2020.
+            <div class="card">
+              <div class="card-header">Technology Used</div>
+              <div class="card-body">
+                <span class="badge badge-secondary">django</span>
+                <span class="badge badge-secondary">postgresql</span>
+                <span class="badge badge-secondary">react</span>
+                <span class="badge badge-secondary">ssrs</span>
+                <span class="badge badge-secondary">sql-server</span>
+                <span class="badge badge-secondary">nginx </span>
+                <span class="badge badge-secondary">uwsgi</span>
+              </div>
+            </div>
+          </p>
+        </li>    
       <li>
           <h5>Check-In Check-Out 2 (September 2020 &ndash; Present)</h5>
           <p>
@@ -46,7 +65,7 @@
         <li>
           <h5>Checkout Board (September 2019 &ndash; Present)</h5>
           <p>
-            A potential digital "whiteboard" replacement to keep track of staff availability when out of office.
+            A digital "whiteboard" to provide information about out-of-office staff.
             <div class="card">
               <div class="card-header">Technology Used</div>
               <div class="card-body">
@@ -56,6 +75,21 @@
                 <span class="badge badge-secondary">typescript</span>
                 <span class="badge badge-secondary">nginx </span>
                 <span class="badge badge-secondary">uwsgi</span>
+              </div>
+             </div>
+          </p>
+        </li>
+        <li>
+          <h5>Collective Calendars (May 2025 &ndash; Present)</h5>
+          <p>
+            A program that displays different calendars on the same calendar view so that staff can see various events and information at a glance.
+            <div class="card">
+              <div class="card-header">Technology Used</div>
+              <div class="card-body">
+                <span class="badge badge-secondary">google-api</span>
+                <span class="badge badge-secondary">html</span>
+                <span class="badge badge-secondary">javascript</span>
+                <span class="badge badge-secondary">php</span>
               </div>
              </div>
           </p>
@@ -78,42 +112,46 @@
           </p>
         </li>
         <li>
-          <h5>Check-In Check-Out (July 2019 &ndash; September 2020)</h5>
+          <h5>DeviceAPI (December 2019 &ndash; August 2021)</h5>
           <p>
-            A simple web application project that allows users to add and manage student behavior data. I think this is used especially for student-related positive behavior and critical incident data entry and reporting. For some time, this program was used by staff in the school district, but was later replaced by Check-In Check-Out 2 in 2020.
+            This program acted a go-between to allow queries to be made from a FileMaker database for Jamf-related purposes. It was built as a Java jar because Java is something that FileMaker supported at the time. This project was later replaced by the Resource Manager API project.
             <div class="card">
               <div class="card-header">Technology Used</div>
               <div class="card-body">
-                <span class="badge badge-secondary">django</span>
-                <span class="badge badge-secondary">postgresql</span>
-                <span class="badge badge-secondary">react</span>
-                <span class="badge badge-secondary">ssrs</span>
-                <span class="badge badge-secondary">sql-server</span>
-                <span class="badge badge-secondary">nginx </span>
-                <span class="badge badge-secondary">uwsgi</span>
+                <span class="badge badge-secondary">filemaker</span>
+                <span class="badge badge-secondary">java</span>
               </div>
             </div>
           </p>
-        </li>        
+        </li>    
         <li>
-          <h5>Upload Portal (March 2019 &ndash; Present)</h5>
+          <h5>Dibels (September 2021 &ndash; December 2023)</h5>
           <p>
-            An extremely simple web application for uploading and managing files. I hesitate to include this in the project list because this is more of a trivial application. If it is helpful in the future, there might be room to work on this more, but for now this is a simple web application that was more of an introduction to using Django for something useful.<br /><br />
-            <b>Update (2021):</b> This application has turned out to be useful for times where it's difficult to transfer files from one server to another. In particular, when transferring something from an older Windows Server elsewhere, this application was an easier way to safely transfer files.
+            This program extracted staff and student data from a Student Information System (SIS) in order to update roster information in a third-party program called DIBELS.
+            <div class="card">
+              <div class="card-header">Technology Used</div>
+              <div class="card-body">
+                <span class="badge badge-secondary">python</span>
+              </div>
+            </div>
+          </p>
+        </li>    
+        <li>
+          <h5>Destiny Extract Sync (August 2023 &ndash; August 2025)</h5>
+          <p>
+            A project that gathered data from a remote server, converted the data from latin1 to utf-8 file encoding, and then data into a local PostgreSQL database so that the Resource Manager API can query this data for Jamf-related purposes.
             <br />
             <div class="card">
               <div class="card-header">Technology Used</div>
               <div class="card-body">
-                <span class="badge badge-secondary">django</span>
+                <span class="badge badge-secondary">python</span>
                 <span class="badge badge-secondary">postgresql</span>
-                <span class="badge badge-secondary">uwsgi</span>
-                <span class="badge badge-secondary">nginx</span>
               </div>
             </div>
           </p>
         </li>
         <li>
-          <h5>Directory Info (January 2019 &ndash; Present)</h5>
+          <h5>Directory Info (January 2019 &ndash; August 2021)</h5>
           <p>
             A web application portal for finding directory-related information (e.g., mailing list and unit resources) within a particular organization.
             <div class="card">
@@ -134,6 +172,21 @@
             </div>
           </p>
         </li>
+        <li>
+          <h5>Directory Info 2 (August 2021 &ndash; Present)</h5>
+          <p>
+            A follow-up project to Directory Info but using a simpler application stack. This application provides reference information for mailing list groups and unit information via the Ume API project.
+            <div class="card">
+              <div class="card-header">Technology Used</div>
+              <div class="card-body">
+                <span class="badge badge-secondary">html</span>
+                <span class="badge badge-secondary">golang</span>
+                <span class="badge badge-secondary">javascript</span>
+              </div>
+            </div>
+          </p>
+        </li>
+
         <li>
           <h5>Directory API (September 2018 &ndash; Present)</h5>
           <p>
@@ -175,7 +228,7 @@
           </p>
         </li>
         <li>
-          <h5>Mailing List API (August 2018 &ndash; Present)</h5>
+          <h5>Mailing List API (August 2018 &ndash; August 2021)</h5>
           <p>
             This project allows for users or programs to query certain Mailman-related data via a web API type of platform. Built especially with Perl due to the limitations of the existing host Linux environment.
             <div class="card">
@@ -194,6 +247,79 @@
           </p>
         </li>
         <li>
+          <h5>Mailing List Sync (December 2019 &ndash; August 2021)</h5>
+          <p>
+            This program syncs Mailman mailing lists with Google Groups mailing lists. The purpose for this project was to keep older mailing lists up to date with Google Groups because there was a time where both Mailman and Google Groups were used at the same time.
+            <div class="card">
+              <div class="card-header">Technology Used</div>
+              <div class="card-body">
+                <span class="badge badge-secondary">perl</span>
+              </div>
+            </div>
+          </p>
+        </li>
+        <li>
+          <h5>Mailing Status API (February 2022 &ndash; July 2024)</h5>
+          <p>
+            This program syncs Mailman mailing lists with Google Groups mailing lists. The purpose for this project was to keep older mailing lists up to date with Google Groups because there was a time where both Mailman and Google Groups were used at the same time.
+            <div class="card">
+              <div class="card-header">Technology Used</div>
+              <div class="card-body">
+                <span class="badge badge-secondary">python</span>
+              </div>
+            </div>
+          </p>
+        </li>
+        <li>
+          <h5>Ninth Grade Teams (June 2023 &ndash; February 2025)</h5>
+          <p>
+            This is a project that was originally built by DJ and it was originally written in the R programming language. This program was later rebuilt using Python in order to more easily run alongside other Python projects. This program queries a Student Information System (SIS) for data and extracts that data into spreadsheets for reference.
+            <div class="card">
+              <div class="card-header">Technology Used</div>
+              <div class="card-body">
+                <span class="badge badge-secondary">python</span>
+              </div>
+            </div>
+          </p>
+        </li>
+        <li>
+          <h5>Ninth Grade Teams Dynamizer (August 2023 &ndash; February 2025)</h5>
+          <p>
+            This project runs the Ninth Grade Teams project for different semesters at different times of the year.
+            <div class="card">
+              <div class="card-header">Technology Used</div>
+              <div class="card-body">
+                <span class="badge badge-secondary">python</span>
+              </div>
+            </div>
+          </p>
+        </li>
+        <li>
+          <h5>Process User Accounts from [...] (December 2019 &ndash; May 2020)</h5>
+          <p>
+            This project loads data into a database for use by User Management.
+            <div class="card">
+              <div class="card-header">Technology Used</div>
+              <div class="card-body">
+                <span class="badge badge-secondary">mysql</span>
+                <span class="badge badge-secondary">php</span>
+              </div>
+            </div>
+          </p>
+        </li>
+        <li>
+          <h5>Resource Manager API (July 2021 &ndash; February 2026)</h5>
+          <p>
+            This project allows users to get device information for specific hardware devices from the third-party Resource manager program. 
+            <div class="card">
+              <div class="card-header">Technology Used</div>
+              <div class="card-body">
+                <span class="badge badge-secondary">golang</span>
+              </div>
+            </div>
+          </p>
+        </li>
+        <li>
           <h5>Ume API (August 2018 &ndash; Present)</h5>
           <p>
             A web API used for accessing general data related to a larger User Management project. Used to access resources as well as generating unique information for user accounts.
@@ -207,6 +333,35 @@
                 <span class="badge badge-secondary">python</span>
               </div>
             </div>
+          </p>
+        </li>
+        <li>
+          <h5>Upload Portal (March 2019 &ndash; Present)</h5>
+          <p>
+            An extremely simple web application for uploading and managing files. I hesitate to include this in the project list because this is more of a trivial application. If it is helpful in the future, there might be room to work on this more, but for now this is a simple web application that was more of an introduction to using Django for something useful.<br /><br />
+            <b>Update (2021):</b> This application has turned out to be useful for times where it's difficult to transfer files from one server to another. In particular, when transferring something from an older Windows Server elsewhere, this application was an easier way to safely transfer files.
+            <br />
+            <div class="card">
+              <div class="card-header">Technology Used</div>
+              <div class="card-body">
+                <span class="badge badge-secondary">django</span>
+                <span class="badge badge-secondary">postgresql</span>
+                <span class="badge badge-secondary">uwsgi</span>
+                <span class="badge badge-secondary">nginx</span>
+              </div>
+            </div>
+          </p>
+        </li>
+        <li>
+          <h5>Vocera Data Sync (July 2025 &ndash; Present)</h5>
+          <p>
+            This project maps staff into desired Active Directory groups based on data from a third-party program so that staff can be included in the Vocera voice directory.
+            <div class="card">
+              <div class="card-header">Technology Used</div>
+              <div class="card-body">
+                <span class="badge badge-secondary">php</span>
+              </div>
+             </div>
           </p>
         </li>
         <li>
@@ -537,3 +692,4 @@
     </div>
   </body>
 </html>
+
